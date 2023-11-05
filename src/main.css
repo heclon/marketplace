@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+/*@tailwind utilities;*/
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: normal;
+  background: var(--surface-ground);
+  padding: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  background: var(--surface-card);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.scaled-iframe {
+  zoom: 0.8;
+  padding: 1rem;
+}
+
+.container{
+  position: relative;
+  width: 200px;
+}
+
+.container img{
+  width: 200px;
+}
+
+.container .play-icon{
+  cursor: pointer;
+  position: absolute;
+  top : 50%;
+  left : 50%;
+  transform: translate(-50%, -50%);
+}
+
+svg:hover #play-svg{
+  fill: #CC181E;
+}
